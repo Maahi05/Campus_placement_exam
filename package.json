@@ -1,0 +1,23 @@
+{
+  "name": "campus-placement-exam-portal",
+  "version": "1.0.0",
+  "description": "Campus Placement Examination Portal with PDF Parser, Anti-Cheating Proctoring, and Auto-Submit Timers",
+  "scripts": {
+    "start": "node server/src/index.js",
+    "server": "node server/src/index.js",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "dev": "node -e \"const { spawn } = require('child_process'); spawn('npm', ['run', 'server'], { stdio: 'inherit', shell: true }); spawn('npm', ['run', 'client'], { stdio: 'inherit', shell: true });\"",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "placement",
+    "exam",
+    "campus-drive",
+    "proctoring",
+    "pdf-parser",
+    "auto-submit"
+  ],
+  "author": "Placement Cell",
+  "license": "ISC"
+}
